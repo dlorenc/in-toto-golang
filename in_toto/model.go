@@ -958,6 +958,8 @@ type ProvenanceRecipe struct {
 
 // ProvenanceMetadata contains metadata for the built artifact.
 type ProvenanceMetadata struct {
+	// Use pointer to make sure that the abscense of a time is not
+	// encoded as the Epoch time.
 	BuildStartedOn    *time.Time `json:"buildStartedOn,omitempty"`
 	MaterialsComplete bool       `json:"materialsComplete"`
 }
