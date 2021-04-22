@@ -868,6 +868,7 @@ func (mb *Metablock) Sign(key Key) error {
 
 /*
 <<<<<<< HEAD
+<<<<<<< HEAD
 SSLSigner provides signature generation and validation based on the SSL
 Signing Spec: https://github.com/secure-systems-lab/signing-spec
 as describe by: https://github.com/MarkLodato/ITE/tree/media-type/ITE/5
